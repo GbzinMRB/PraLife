@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PraLife</title>
+</head>
+<style>
+    * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #FFF5E6;
+        }
+        header {
+            background-color: #A62639;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 0;
+        }
+         nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #FFDAB9;
+        }
+        .produtos {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card h3 {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            color: #A62639;
+        }
+        .product-card p {
+            color: #555;
+            padding: 0 1rem 1rem;
+        }
+        footer {
+            background-color: #A62639;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            
+        }
+         @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+        .hero {
+            background-color: #D2691E;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+</style>
+<body>
+    <header>
+        <h1>PraLife</h1>
+        <nav>
+            <a href="#inicio ">inicio</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#Contato">Contato</a>
+        </nav>
+    </header>
+    <section  class="hero" id="inicio">
+        <h1>Em Breve... Sabor e Energia com PraLife!</h1>
+        <p>Descubra nossos produtos deliciosos e energéticos, perfeitos para o seu dia a dia.</p>
+    </section>
+     <section class="produtos" id="produtos">
+        <div class="product-card">
+            <h3>Chips de Frutas</h3>
+            <p>Um snack saudável e crocante, feito com frutas naturais para te dar energia a qualquer hora.</p>
+        </div>
+        <div class="product-card">
+            <h3>Gel Energético</h3>
+            <p>Perfeito para esportistas, nosso gel energético te dá o boost que você precisa para ir mais longe.</p>
+        </div>
+     </section>
+     <footer id="Contato">
+        <p>Entre em contato: pralife.br@gmail.com | (19) 989759208</p>
+        <p>&copy; 2025 PraLife. Todos os direitos reservados.</p>
+     </footer>
+</body>
+</html>
